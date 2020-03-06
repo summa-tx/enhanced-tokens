@@ -1,0 +1,29 @@
+{
+  "name": "@summa-tx/enhanced-tokens",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "truffle test",
+    "lint": "solium -d contracts/ && eslint test/ migrations/ src/",
+    "compile": "truffle compile",
+    "coverage": "truffle run coverage"
+  },
+  "author": "James Prestwich",
+  "license": "AGPL-3.0-or-later",
+  "dependencies": {
+    "bn.js": "^5.1.1",
+    "openzeppelin-solidity": "^2.5.0",
+    "@truffle/hdwallet-provider": "^1.0.17",
+    "truffle-plugin-verify": "^0.3.9",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "solidity-coverage": "^0.7.2",
+    "solium": "^1.2.5",
+    "eslint": "^6.8.0"
+  }
+}
