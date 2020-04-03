@@ -12,12 +12,6 @@ Contracts are designed to be easy to use. For example the following 5 line file
 is a complete, ready-to-use token with auctions and flash minting. It only
 needs an initial distribution.
 
-Future feature ideas:
-
-1. Issuance curve
-1. Issuance by bounded, fixed-price sale
-1. Issuance by abstract sale terms
-
 
 ```
 pragma solidity >= 0.5.16;
@@ -29,7 +23,15 @@ import {FlashMint} from "./flash/FlashMint.sol";
 contract FlashDecirculate is Decirculate, FlashMint, ERC20 {}
 ```
 
-## Important Note
+Future feature ideas:
+
+1. Issuance curve
+1. Issuance by bounded, fixed-price sale
+1. Issuance by abstract sale terms
+
+## Important Notes
+
+**This software has not been reviewed or thoroughly tested.**
 
 It is not always safe to mix features! For example, `DistributeERC20` MUST NOT
 be used with `FlashMint` or `Decirculate`. And `DistributeETH` MUST NOT be used
