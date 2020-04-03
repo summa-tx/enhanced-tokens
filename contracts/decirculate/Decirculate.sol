@@ -6,6 +6,7 @@ import {ERC20} from "openzeppelin-solidity/contracts/token/ERC20/ERC20.sol";
 import {SafeMath} from "openzeppelin-solidity/contracts/math/SafeMath.sol";
 import {SafeERC20} from "openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol";
 
+
 interface IDecirculate {
     function start(address asset, uint256 bidAmount) external;
     function bid(address asset, uint256 id, uint256 bidAmount) external;
