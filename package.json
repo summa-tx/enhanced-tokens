@@ -13,7 +13,7 @@
     "coverage": "truffle run coverage"
   },
   "author": "James Prestwich",
-  "license": "AGPL-3.0-or-later",
+  "license": "(MIT OR Apache-2.0)",
   "dependencies": {
     "bn.js": "^5.1.1",
     "openzeppelin-solidity": "^2.5.0",
